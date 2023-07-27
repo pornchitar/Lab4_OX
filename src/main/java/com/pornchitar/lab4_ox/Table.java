@@ -129,7 +129,7 @@ public class Table {
     }
 
     public void reset() {
-          String[][] table_ = {{"-", "-", "-"}, {"-", "-", "-"}, {"-", "-", "-"}};
+        String[][] table_ = {{"-", "-", "-"}, {"-", "-", "-"}, {"-", "-", "-"}};
         setTable(table_);
         currentPlayer = player2;
         count = 0;
