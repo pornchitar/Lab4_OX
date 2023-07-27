@@ -135,23 +135,6 @@ public class Table {
         count = 0;
     }
 
-    public boolean endGame() {
-        System.out.print("Exit !!!??? (y/n): ");
-        Scanner kb = new Scanner(System.in);
-        String continues = kb.nextLine().toLowerCase();
-
-        while (!continues.equals("n") && !continues.equals("y")) {
-
-            System.out.print("Exit !!!??? (y/n): ");
-            continues = kb.nextLine().toLowerCase();
-        }
-        if (continues.equals("y")) {
-            System.out.println("GoodBye...");
-            return true;
-        }
-        reset();
-        return false;
-
-    }
+    
 }
 
