@@ -55,14 +55,6 @@ public class Table {
             saveWin();
             return true;
         }
-        if (checkX1()) {
-            saveWin();
-            return true;
-        }
-        if (checkX2()) {
-            saveWin();
-            return true;
-        }
         if (checkDiagonals()) {
             saveWin();
             return true;
@@ -87,13 +79,7 @@ public class Table {
         return table[0][col - 1] != "-" && table[0][col - 1] == table[1][col - 1] && table[0][col - 1] == table[2][col - 1];
     }
 
-    public boolean checkX1() {
-        return false;
-    }
-
-    public boolean checkX2() {
-        return false;
-    }
+ 
 
     public boolean checkDiagonals() {
         if (table[0][0].equals(currentPlayer.getSymbol()) && table[1][1].equals(currentPlayer.getSymbol()) && table[2][2].equals(currentPlayer.getSymbol())) {
